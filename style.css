@@ -1,0 +1,159 @@
+/* CSS page with styles using class and ID selctors */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+}
+
+nav {
+  flex: 1;
+}
+
+#title {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+#navLinks {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.singleLink {
+  color: grey;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.currentLink {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#mainIndex {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+#mainPages {
+  display: flex;
+  width: 75%;
+  padding: 100px 100px 100px 150px;
+  min-height: 30vh;
+}
+
+#textContainer {
+  flex: 1;
+}
+
+#buttonContainer {
+  margin-top: 20px;
+}
+
+.mainText h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.mainText h2 {
+  font-size: 20px;
+  font-weight: 250;
+}
+
+.mainText h3 {
+  font-size: 30px;
+  font-weight: 250;
+}
+
+.mainText p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.pageLinks {
+  padding: 50px 0px 0px 0px;
+}
+
+#htmlButton {
+  background-color: #f16529;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+#cssButton {
+  background-color: #3c99dc;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+#javascriptButton {
+  background-color: #f0db4f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#webImage {
+  flex: 1;
+}
+#webImage img {
+  height: 50vh;
+}
+
+.boxed {
+  font-size: 16px;
+  border: 1.5px solid green;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+.boxed2 {
+  font-size: 16px;
+  background: lightgrey;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+#mapid {
+  height: 360px;
+}
+
+#about {
+  align-items: center;
+}

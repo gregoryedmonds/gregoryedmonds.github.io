@@ -1,0 +1,328 @@
+<!--JavaScript page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Leaflet stylesheet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+    <!--Leaflet script-->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+    <!--Local script-->
+    <script defer src="./script.js"></script>
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <header>
+        <div id="homeButton">
+            <a href="./index.html"><img src="./images/home.png" height="60" width="60" alt="home"></a>
+
+        </div>
+
+        <h1 id="title">HTML, CSS and JavaScript</h1>
+
+        <nav>
+            <ul id="navLinks">
+                <li><a class="singleLink" href="htmlpage.html">HTML</a></li>
+                <li><a class="singleLink" href="csspage.html">CSS</a></li>
+                <li><a class="currentLink" href="javascriptpage.html">JavaScript</a></li>
+                <li><a class="singleLink" href="aboutpage.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="mainPages">
+        <div id="textContainer">
+            <div class="mainText">
+                <h1 style="color:#F0DB4F">JavaScript</h1>
+                <h2>The functionality of a website</h2>
+                <hr>
+                <br>
+                <p>
+                    JavaScript was created in May 1995 by Brendan Eich. It is a scripting language that allows the
+                    implementation of complex features on web pages. Every time a web page does more than simply display
+                    static information, JavaScript is probably involved under the hood. JavaScript has evolved to become
+                    the standard and most popular scripting language for the web.
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                <h3>History</h3>
+                <br>
+                <h2>May 1995 – The Beginning</h2>
+                <li>The history of JavaScript is not at all straightforward. It was first implemented in the
+                    Netscape browser, where programmer Brendan Eich was recruited to put “scheme in the browser”.
+                    Under pressure, with the threat of Microsoft developing their technology sooner, Brendan created
+                    a language called Mocha in May 1995. It had the syntax of Java while also having first-class
+                    functions, dynamic types and prototypes. Later that year it was renamed to LiveScript, before
+                    being renamed JavaScript in December of the same year. Both times for marketing reasons.</li>
+                <br>
+                <h2>August 1996 – Jscript</h2>
+                <li>In August 1996, Microsoft reverse engineers JavaScript and ships it with Internet Explorer 3 but
+                    calls it Jscript for legal reasons. In November, Netscape submits documentation to standardise
+                    JavaScript with ECMA International.</li>
+                <br>
+                <h2>June 1997 – The start of ECMAScript</h2>
+                <li>In June 1997, the first standardized version of JavaScript (ES1) was approved as ECMA-262 or
+                    ECMAScript. It contained many of the features we use in the language today, like first-class
+                    functions, objects, and prototypal inheritance.</li>
+                <br>
+                <h2>1997 to 1999 – First Revisions of ECMAScript</h2>
+                <li>Between 1997 and 1999, ECMAScript had three revisions, but nearly 10 years later, version 4 was
+                    abandoned due to varying opinions on the direction of the language and what features it would
+                    contain.</li>
+                <li>Interestingly, mmany of these controversial features, such as generators, iterators, and
+                    destructuring assignments have now been included in more recent ECMAScript specifications.</li>
+                <br>
+                <h2>2006 – Introduction of Ajax</h2>
+                <li>In the year before its official release, a paper released by Jesse James Garrett introduced
+                    Ajax, which was a revolutionary suite of technologies that included JavaScript. Ajax greatly
+                    improved user experience of the web by allowing web pages to feel more like native desktop apps.
+                    This really pushed JavaScript into the spotlight as a professional programming language after
+                    its troubles in previous years.</li>
+                <br>
+                <h2>2009 - ECMAScript 5</h2>
+                <li>Exactly 10 years after ES3, we finally see a new version of JavaScript. It adds a
+                    conventional set of new features based on ES3.1, including strict mode, accessors, and JSON.
+                </li>
+                <br>
+                <h2>2010 to 2013 - JavaScript Frameworks</h2>
+                <li>Initially JavaScript was designed as a client side language, however, to give some structure in
+                    the development process, JavaScript frameworks were created. Some of the most notable created
+                    during the time were Angular, React and Vue.JS. All of therese further boosted the adoption of
+                    JavaScript</li>
+                <br>
+                <h2>JavaScript Today</h2>
+                <li>In 2020, we see the realese of ES2020 a.k.a. version 11 of ECMAcript.</li>
+                <li>It is clear that JavaScript is central to web development for many reasons, one of the most
+                    important being its tight integration with the DOM. It is now the most
+                    popular scripting language, and more than 94% of the websites worldwide use JavaScript.</li>
+                <br>
+                <hr>
+                <br>
+                <h3>How does it work?</h3>
+                <br>
+                <h2>The Document Object Model</h2>
+                <br>
+                <p>The Document Object Model (DOM) is an essential part of using JavaScript alongside HTML. It is an
+                    interface that allows a programming language such as Javascript to manipulate the content,
+                    structure, and style of a website.
+                    <br>
+                    <br>
+                    One of the most common ways of doing this is using the 'getElementByID()' method. This is used
+                    almost
+                    every time you want to manipulate or get info from an element in your HTML document.
+                    <br>
+                    <br>
+                    The example below is a simple form that accepts a user's name and password. The form itself is
+                    created in the HTML file, but the functionality is all handled by Javascript.
+                </p>
+            </div>
+            <br>
+
+            <!--Container for text box for form-->
+            <div class="boxed2">
+
+                <!--Container for displaying form errors-->
+                <div id="error"></div>
+
+                <!--Container for form-->
+                <form id="form" action="./example_pages/successpage.html">
+                    Name: <input id="name" name="name" type="text">
+                    <br>
+                    Password: <input id="password" name="password" type="password">
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <br>
+            <br>
+            <p>As you can see, the form has some <b>requirements:</b></p>
+            <ol>
+                <li>The name field must not be empty.</li>
+                <li>The password must be longer than 6 characters.</li>
+                <li>If (1) and (2) are satified, the form submits successully.</li>
+            </ol>
+            <br>
+            <p>The JavaScript code to show this is below.</p>
+            <br>
+
+            <!--Container for text box for code-->
+            <div class="boxed">
+
+                <!--Code inside text box-->
+                <pre>
+const name = document.getElementById('name')
+const password = document.getElementById('password')
+const form = document.getElementById('form')
+const errorElement = document.getElementById('error')
+
+form.addEventListener('submit', (e) => {
+    let messages = []
+    if (name.value === "" || name.value == null) {
+        messages.push("Name cannot be blank")
+    }
+
+    if (password.value.length <= 6) {
+        messages.push("Password must be at least 6 characters long")
+    }
+
+    if (messages.length > 0) {
+        e.preventDefault()
+        errorElement.innerText = messages.join(', ')
+    }
+})
+                </pre>
+            </div>
+            <br>
+            <br>
+            <ol>
+                <li>The 'const' keyword lets the user create a variable. The variable is then set to whatever HTML
+                    element is specified using the 'getElementById' method. These HTML elements are gived ID's simply by
+                    including id="id here" in their element.</li>
+                <li>The 'addEventListener' method takes an event to listen for, and a second argument to be called
+                    whenever the described event takes place. In this case, the event listened for is the Submit button
+                    being clicked, which then allows it to call the arguments below it.</li>
+                <li>The 'if' statements below it check that the values inputted into the form have met the requirements,
+                    with the last statement handling the errors.</li>
+            </ol>
+            <br>
+            <hr>
+            <br>
+            <h2>AJAX and Fetch API</h2>
+            <br>
+            <p>
+                With our interactive websites today, we often have to save something to a server or get data back from
+                it. This needs to happen some time after a web page is loaded and without refreshing the page. We need
+                something to connect to a server through JavaScript. That is where AJAX comes in.
+                <br>
+                <br>
+                AJAX (Asynchronous JavaScript And XML) represents code that is executed asynchronously, and
+                XML distributes data over the internet through browsers. Originally, the XMLHttpRequest API was the
+                working standard for many years until other APIs were created to simplify the code structure. The Fetch
+                API is the newest standard for dealing with HTTPRequests, and provides a JavaScript
+                interface for accessing and manipulating parts of the HTTP pipeline for requests and responses using
+                promises. Fetch also provides a global fetch() method that simply fetches resources asynchronously
+                across the network. An example of the fetch() method is shown below. The program fetches data using an
+                API that provides the current latitude and longitude of the International Space Station (ISS). These
+                coordinates and then placed on a world map, and the location is
+                updated every second.
+                <br>
+                <br>
+
+                <!--Container for 'Where is the ISS?' text-->
+            <div>
+                <h3>Where is the ISS?</h3>
+                latitude: <span id="lat"></span>
+                <br>
+                longitude: <span id="lon"></span>
+            </div>
+
+            <!--Container for 'Where is the ISS?' map-->
+            <div id="mapid">
+            </div>
+            <br>
+            All of this functionality is created using the JavaScript code below.
+            <br>
+            <br>
+            <!--Container for text box for code-->
+            <div class="boxed">
+
+                <!--Code inside text box-->
+                <pre>
+const mymap = L.map("mapid").setView([0, 0], 1);
+const attribution =
+'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+const tileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+const tiles = L.tileLayer(tileUrl, { attribution });
+tiles.addTo(mymap);
+
+const issIcon = L.icon({
+iconUrl: "images/iss.png",
+iconSize: [50, 32],
+iconAnchor: [25, 16],
+});
+let marker = L.marker([0, 0], { icon: issIcon }).addTo(mymap);
+
+mymap.on("zoomend", function () {
+const zoom = mymap.getZoom() + 1;
+const w = 25 * zoom;
+const h = 16 * zoom;
+issIcon.options.iconSize = [w, h];
+issIcon.options.iconAnchor = [w / 2, h / 2];
+mymap.removeLayer(marker);
+let latlng = marker.getLatLng();
+marker = L.marker([0, 0], { icon: issIcon }).addTo(mymap);
+marker.setLatLng(latlng);
+});
+
+const api_url = "https://api.wheretheiss.at/v1/satellites/25544";
+
+let firstTime = true;
+
+async function getISS() {
+const response = await fetch(api_url);
+const data = await response.json();
+const { latitude, longitude } = data;
+
+marker.setLatLng([latitude, longitude]);
+if (firstTime) {
+mymap.setView([latitude, longitude], 2);
+firstTime = false;
+}
+document.getElementById("lat").textContent = latitude.toFixed(2);
+document.getElementById("lon").textContent = longitude.toFixed(2);
+}
+
+getISS();
+setInterval(getISS, 1000);
+                    </pre>
+            </div>
+            <p>
+                <br>
+                Most of the code shows the creation of constants for the map, API URL's and map
+                specifications. It then uses an icon of the ISS as the marker, sets different properties for zoom
+                levels, and sets different properties for the fetch function. The important part, however, is the
+                function getISS().
+                <br>
+                <br>
+                The beginning of the getISS() function is where fetch() comes into
+                play.
+                <br>
+                - The 'async' keyword before the function means that it will always return a promise and
+                wraps-non promises in it. A Promise represents the eventual completion (or failure) of
+                an asynchronous operation and its resulting value.
+                <br>
+                - The 'await' keyword makes JavaScript wait until that promise settles and returns its result.
+                <br>
+                - fetch() simply takes one argument (the path to the resource you want to fetch) and returns a
+                promise containing the response, which is put into the 'response' constant in this example.
+                <br>
+                - To extract the JSON body content from the response, we use the json() method. This extracts
+                what we actually want from the data.
+            </p>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>

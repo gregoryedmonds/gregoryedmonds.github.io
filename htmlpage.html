@@ -1,0 +1,204 @@
+<!--HTML page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <title>HTML</title>
+</head>
+
+<body>
+    <header>
+
+        <!--Container for home button (replaces triple logo)-->
+        <div id="homeButton">
+            <a href="./index.html"><img src="./images/home.png" height="60" width="60" alt="home"></a>
+        </div>
+
+        <h1 id="title">HTML, CSS and JavaScript</h1>
+
+        <nav>
+            <ul id="navLinks">
+                <li><a class="currentLink" href="htmlpage.html">HTML</a></li>
+                <li><a class="singleLink" href="csspage.html">CSS</a></li>
+                <li><a class="singleLink" href="javascriptpage.html">JavaScript</a></li>
+                <li><a class="singleLink" href="aboutpage.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Container for main section of all pages except index-->
+    <section id="mainPages">
+
+        <!--Containers for all text on page-->
+        <div id="textContainer">
+            <div class="mainText">
+
+                <h1 style="color:#F16529">HTML</h1>
+                <h2>The structure of a website</h2>
+                <hr>
+                <br>
+                <p>
+                    HTML is short for Hypertext Markup Language and was first developed by Tim Berners-Lee to be
+                    released in 1993. At its core, HTML can be seen as the main structure of a web page. Each page
+                    contains a series of connections to other pages called hyperlinks. Every web page on the internet is
+                    written using some type of HTML code.
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3>History</h3>
+                    <br>
+                    <h2>Mid 1993 - HTML 1.0</h2>
+                    <li>This was the original version of HTML. It had very limited features and was greatly limited in
+                        what you could do to design web pages.</li>
+                    <br>
+                    <h2>November 1995 - HTML 2.0</h2>
+                    <li>HTML 2.0 arrived and included all the features of HTML 1.0 alongside several new features. For a
+                        couple years until 1997, HTML 2.0 was the standard in web page design.</li>
+                    <br>
+                    <h2>March 1995 - HTML 3.0 (Proposal)</h2>
+                    <li>HTML 2.0 successfully achieved what it set out to do, but many people designing websites at the
+                        time wanted more control over their web pages and more ways to enhance their text and overall
+                        appearance of their websites. </li>
+                    <li>At around the same time, an HTML working group led by Dave Raggett introduced a draft of HTML
+                        3.0, which included many new and useful enhancements to HTML 2.0. Most browsers, however, only
+                        implemented a few features of this draft. More confusion arose as people, more often than not,
+                        referred to documents containing browser specific tags instead of referring to documents
+                        adhering to the HTML 3.0 draft. This was a major reason why the draft was later abandoned.</li>
+                    <br>
+                    <h2>January 1997 - HTML 3.2</h2>
+                    <li>After the introduction of more browser-specific tags it became obvious that a new standard was
+                        needed. Because of this, the Word Wide Web Consortium (W3C), which was founded in 1994 to
+                        develop standards for the evolution of web, drafted the WILBUR standard. This later became known
+                        as HTML 3.2. It can be seen as the standardised version of HTML 3.0 and most popular browsers
+                        today fully support its use.</li>
+                    <li>Another important feature of HTML 3.2 was support for <a href="csspage.html"> CSS (Cascading
+                            Style Sheets).</a></li>
+                    <br>
+                    <h2>December 1997 - HTML 4.0</h2>
+                    <li>This version of HTML introduced new functionality, most of which came from the expired HTML 3.0
+                        draft. HTML 4.0 became a recommendation for developers in December, 1997 and then a standard as
+                        of April, 1998.</li>
+                    <br>
+                    <h2>October 2014 - HTML5</h2>
+                    <li>HTML 5 (typically written as HTML5) is the latest web standard following HTML 4 and XHTML. Since
+                        HTML 4.0 was introduced back in 1997, much has changed with the web and something needed to be
+                        done to address all the new technologies and latest media. HTML5 is the result of a combined
+                        effort that began in 2006 between the W3C and the Web Hypertext Application Technology Working
+                        Group (WHATWG). Its basic aims are to improve the language and to support the latest multimedia.
+                        In
+                        order to accomplish this, some ground rules were established by the two cooperating
+                        organisations, such as reducing the need for external plug-ins like Flash, better handling of
+                        errors, and more markup elements to replace scripting. As well as this, a large selection of new
+                        application program interfaces (APIs) lets developers easily integrate a huge range of
+                        functionality into HTML5 sites. One big advantage of HTML5 is that it doesn’t rely on
+                        proprietary third-party plugins to create complex and powerful web projects.</li>
+                    <li>Some new features of HTML5 include special elements for semantic labelling such as tags for
+                        sections, navigation, headers, footers and main sections (which are all used in this website).
+                        These elements define the type of content associated with each element, making structuring
+                        content more efficient and helping search engines to navigate through websites. This means that
+                        a well-structured HTML5 site has better chances of ranking highly in search results.</li>
+                    <li>Adding multimedia elements is also simplified in HTML5 through the use of audio and video tags.
+                    </li>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3>How does it work?</h3>
+                    <br>
+                    <p>Below you will see an example of code used to write a basic webpage in HTML5 and an overview of
+                        each tag. These elements have been present in HTML since it was created with some updates for
+                        HTML5.
+                    </p>
+                    <br>
+
+                    <!--Container for text box for code-->
+                    <div class="boxed">
+
+                        <!--Code inside text box-->
+                        <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta charset=”utf-8”&gt;
+    &lt;title&gt;Example page&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;This is the main heading&lt;/h1&gt;
+    &lt;p&gt;This is an example of a basic &lt;b&gt;HTML&lt;/b&gt; page.&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;h2&gt;This is a subheading&lt;/h2&gt;
+    &lt;ol&gt;
+    &lt;li&gt;This&lt;/li&gt;
+    &lt;li&gt;is&lt;/li&gt;
+    &lt;li&gt;an&lt;/li&gt;
+    &lt;li&gt;ordered&lt;/li&gt;
+    &lt;li&gt;list&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;a href="https://en.wikipedia.org/wiki/Moon"&gt;Moon&lt;/a&gt;
+    &lt;br&gt;
+    &lt;img src="../images/moon.png" height="200" width="200" alt="moon"&gt;
+
+&lt;/html&gt;
+                    </pre>
+                    </div>
+                    <br>
+
+                    <!--Button to be taken to HTML example page-->
+                    <div id="buttonContainer">
+                        <a href="./example_pages/htmlexample.html"><button id="htmlButton">View this webpage
+                            </button></a>
+                    </div>
+                    <br>
+                    <ol>
+                        <li>The &lt;!doctype html&gt; declaration is used to let a browser know what document type to
+                            expect.</li>
+                        <li>The &lt;html&gt; opening tag lets the browser know that it is reading HTML code.</li>
+                        <li>The &lt;head&gt; section contains information about the page, such as its title, meta tags,
+                            and where to locate the CSS file.</li>
+                        <li>The &lt;body&gt; section contains everything that's viewable on the browser. For example,
+                            all the text seen here is contained in the body tags.</li>
+                        <li>The &lt;h1&gt; tag is the visible heading of the page.</li>
+                        <li>The &lt;p&gt; tag is a paragraph of text.</li>
+                        <li>The &lt;hr&gt; tag represents a horizontal rule (line).</li>
+                        <li>Contained in the paragraph is the &lt;b&gt; tag that bolds the word 'This' in the
+                            paragraph.</li>
+                        <li>The &lt;h2&gt; tag is a subheading, heading 2.</li>
+                        <li>The &lt;ol&gt; tag denotes the start of an ordered (numbered) list. Each &lt;li&gt; tag then
+                            represents each item in the list.</li>
+                        <li>
+                            The &lt;a&gt; tag (anchor tag) denotes a link. In this case to an external website.
+                        </li>
+                        <li>The &lt;br&gt; tag inserts a single line break.</li>
+                        <li>The &lt;img&gt; tag denotes the placement of an image, with 'src' specifying the local link
+                            to the image.
+                            <br>
+                            - The 'height' and 'width' attributes change the height and width of the image.
+                            <br>
+                            - The 'alt' attribute specifies the text to show in place of the image in case the image
+                            can't be loaded.
+                        </li>
+                        <li>The closing tags (&lt;/&gt;) close each of the opening tags where required.</li>
+                    </ol>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--Button to be taken to CSS page-->
+                    <div id="buttonContainer">
+                        <a href="./csspage.html"><button id="cssButton">Next: CSS</button></a>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

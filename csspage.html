@@ -1,0 +1,179 @@
+<!--CSS page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <title>CSS</title>
+</head>
+
+<body>
+    <header>
+
+        <div id="homeButton">
+            <a href="./index.html"><img src="./images/home.png" height="60" width="60" alt="home"></a>
+
+        </div>
+
+        <h1 id="title">HTML, CSS and JavaScript</h1>
+
+        <nav>
+            <ul id="navLinks">
+                <li><a class="singleLink" href="htmlpage.html">HTML</a></li>
+                <li><a class="currentLink" href="csspage.html">CSS</a></li>
+                <li><a class="singleLink" href="javascriptpage.html">JavaScript</a></li>
+                <li><a class="singleLink" href="aboutpage.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="mainPages">
+        <div id="textContainer">
+            <div class="mainText">
+
+                <h1 style="color:#3C99DC">CSS</h1>
+                <h2>The style of a website</h2>
+                <hr>
+                <br>
+                <p>
+                    CSS is short for Cascading Style Sheets and was first conceptualised by Håkon Wium Lie in 1994, then
+                    made a specification by the W3C in 1996. CSS is a language used to describe reusable styles for
+                    presenting documents written in a markup language. It allows web developers to alter the layout and
+                    appearance of their web pages.
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3>History</h3>
+                    <br>
+                    <h2>December 1996 – CSS 1</h2>
+                    <li>The internet’s first official introduction to CSS was back in 1996 when W3C released it into the
+                        world. CSS was not the only styling language in development at the time, but the very element of
+                        cascading and developing sequences is what set it apart from the rest.</li>
+                    <li>The addition of CSS allowed for web elements to adopt unique characteristics. The major benefit
+                        was that designers and developers now had the ability to change properties of CSS without having
+                        to change the html.</li>
+                    <br>
+                    <h2>May 1998 – CSS 2</h2>
+                    <li>Wanting to build on the properties of CSS, the first working draft of CSS 2 was released in
+                        November 1997 and became a W3C recommendation in May 1998.</li>
+                    <li>This version expanded the capabilities of properties which allowed them to be more featured. The
+                        use of the infamous text-shadow effect is an example of this.</li>
+                    <br>
+                    <h2>June 2011 – CSS 2.1</h2>
+                    <li>CSS 2.1 was first introduced in 2004 and became a W3C Recommendation in June 2011. This revised
+                        version solved much of the bugs that were apparent CSS 2 and became its replacement.</li>
+                    <li>It allowed the definition of parent-child relationships and gave designers and developers the
+                        ability to define multiple class names on a given element. It also introduced the ability to
+                        adjust font size, which would go on to perhaps be the first taste of responsive design.</li>
+                    <li>Presentations could now be tailored to specific media devices such as phones, printers and even
+                        braille and aural devices. This was the beginning of what would become CSS 3.</li>
+                    <br>
+                    <h2>June 1999 – CSS 3</h2>
+                    <li>Work on CSS 3 started around the time of publication of the original CSS 2 recommendation. It
+                        builds on older versions of CSS.</li>
+                    <li>Instead of defining all features in a single and large specification like CSS 2, CSS 3 is
+                        divided into several separate documents called modules. Each module adds new capability or
+                        extends features defined in CSS 2.</li>
+                    <li>As of March 2011, there are over 40 CSS modules published from the CSS Working Group. Some of
+                        these include electors, namespaces, colour and media queries.</li>
+                    <br>
+                    <h2>CSS 4?</h2>
+                    <li>Because CSS 3 was separated into modules, there will be no single CSS 4 release. Some level 4
+                        modules which build on level 3 functions have released, and new functionality has been added
+                        into modules. These modules will continue to be released to continue to add and update features
+                        of CSS 3.</li>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3>How does it work?</h3>
+                    <br>
+                    <p>A single CSS file may be linked to one or multiple HTML pages, which allows a developer to change
+                        the
+                        appearance
+                        of all the pages at the same time.</p>
+                    <br>
+                    Some common uses of CSS are to
+                    <li>Specify a background colour for a webpage, a table, a form element, or a paragraph.</li>
+                    <li>Specify a common style for one tag or a set of tags.</li>
+                    <li>Specify the distance between elements.</li>
+                    <li>Specify the appearance of links.</li>
+                    <li>Specify multiple styles for various webpages.</li>
+                    <br>
+                    <p>Looking back at or basic HTML page, we can add some of these features to it using the code below.
+                    </p>
+                    <br>
+
+                    <!--Container for text box for code-->
+                    <div class="boxed">
+
+                        <!--Code inside text box-->
+                        <pre>
+body {
+background-color: lightblue;
+}
+
+h1 {
+color: red;
+text-align: center;
+}
+
+h2 {
+color: purple;
+}
+
+p {
+font-family: verdana;
+font-size: 20px;
+}
+
+ol:hover {
+    background-color: blue;
+  }
+                        </pre>
+                    </div>
+                    <br>
+
+                    <!--Button to be taken to CSS example page-->
+                    <div id="buttonContainer">
+                        <a href="./example_pages/cssexample.html"><button id="cssButton">View this webpage
+                            </button></a>
+                    </div>
+                    <br>
+                    <ol>
+                        <li>The 'background-color' atrribute in the body{} section changes the background colour of the
+                            page to light blue.</li>
+                        <li>The 'color' and 'text-align' attributes in the h1{} and h2{} sections change the text colour
+                            and
+                            aligment for those headings only.</li>
+                        <li>The 'font-family' and 'font-size' atrributes in the p{} section change the font and size for
+                            the text in Paragraph only.</li>
+                        <li>The ':hover' attrubute is a psuedo-class.</li>
+                        - A pseudo-class is a keyword added to a selector that specifies a special state of the
+                        selected element(s).
+                        <br>
+                        - In this example, '':hover' is used to change the list's colour when the
+                        user's pointer hovers over it. To do this, 'ol:hover' must be used.
+                    </ol>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <!--Button to be taken to JavaScript page-->
+                    <div id="buttonContainer">
+                        <a href="./javascriptpage.html"><button id="javascriptButton">Next: JavaScript</button></a>
+                    </div>
+
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
